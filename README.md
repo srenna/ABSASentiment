@@ -1,2 +1,12 @@
 # ABSA_sentiment
-Did the guest like the dish or not? Uses a custom-trained Named Entity Recognition (NER) model to identify the dishes in a review and then use a pre-trained ABSA model to analyze the sentiment expressed about those dishes. 
+ The function provided will take as input a list of sentences and return a dataframe with the review id (i.e. the index of the review in the list), dish, corresponding sentiment score and confidence.
+
+Import the function from the submitted PY file. 
+
+from absa import absa
+reviews = ["the first restaurant review. it can contain multiple sentences.",
+           "the second restaurant review",
+           ...]
+results = absa(reviews)
+
+The script will return a dataframe with the results!
